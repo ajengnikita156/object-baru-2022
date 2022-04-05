@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var mobil = {merk :"toyota avanza",
+                    tipe  :"MPV",
+                harga :200000000,
+            warna :"merah",
+            pergi : function (tempat) {return "pergi ke "+tempat; }
+    };
+            console.log( mobil.pergi("medan") );
+
+            mobil.pergi = "methodnya sudah tertimpa...";
+
+            console.log( mobil.pergi("medan") );
+    
+    </script>
+</body>
+</html>
